@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/mui.picker.css">
+	<link rel="stylesheet" href="css/mui.poppicker.css">
+	<link rel="stylesheet" href="css/mui.dtpicker.css">
+</head>
+<body>
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	  <!-- 菜单容器 侧栏-->
+		 <aside class="mui-off-canvas-left" id="offCanvasSide">
+			<div class="mui-scroll-wrapper aside-scroll">
+			  <div class="mui-scroll aside">
+				<!-- 菜单具体展示内容 -->
+					<h2>收支分类</h2>
+					<ul>
+						<li>全部收入</li>
+						<li>全部支出</li>
+					</ul>
+					<h2>收支分类</h2>
+					<ul>
+						<li>购物</li>
+						<li>住宿</li>
+						<li>购物</li>
+						<li>住宿</li>
+						<li>购物</li>
+						<li>住宿</li>
+					</ul>
+					<button type="button" class="mui-btn mui-btn-danger close-aside">关闭侧栏</button>
+			  </div>
+			</div>
+		  </aside>
+		  
+		<!-- 主页面容器 -->
+		<div class="mui-inner-wrap main">
+			<!-- 头部部分 -->
+			<header class="mui-bar mui-bar-nav header">
+				<div class="header1">
+					<p>本月花费(元)</p>
+					<p>
+						<span id="select-month">月</span>
+						<span id="select-date">2018-11</span>
+					</p>
+				</div>
+				<div class="header2">
+					<h2>8036.00</h2>
+				</div>
+				<div class="header3">
+					<p>本月收入<span>0.00</span></p>
+					<p>设置预算<span class="mui-icon mui-icon-gear"></span></p>
+				</div>
+			</header>
+			
+			<!-- 内容部分 -->
+			<div class="mui-content wrap">
+				<div class="con-title">
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left open-aside" href="#offCanvasSide"></a>
+					<p>
+						<span class="select-bill active">账单</span>
+						<span class="select-table">图表</span>
+					</p>
+					<span class="mui-icon mui-icon-search"></span>
+				</div>
+				<div class="content">
+					<!-- 账单 -->
+					<section class="bill-wrap">
+						<div class="mui-content mui-scroll-wrapper con-scroll">
+							<div class="mui-scroll">
+								<!-- 按月显示 -->
+								<div class="month-show">
+									<ul id="OA_task_1" class="mui-table-view bill-list">
+										<h6 class="day-title">
+											<p>11月15日</p>
+											<p>花费<span>8034.00</span></p>
+										</h6>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<p class="list-left">
+													<span class="mui-icon mui-icon-home cIcon"></span>
+													<span class="cName">吃饭</span>
+												</p>
+												<p class="list-right red">89:00</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- 按年显示 -->
+								<div class="year-show none">
+									 <ul class="mui-table-view"> 
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right fold" href="#">
+												<p class="flod-month">
+													<span class="mui-icon mui-icon-starhalf"></span>
+													<span>10月</span>
+												</p>
+												<p>
+													<span class="red">收出</span>
+													<span class="red">1212</span>
+												</p>
+												<p>
+													<span class="green">收入</span>
+													<span class="green">1212</span>
+												</p>
+												<p>
+													<span class="gray">结余</span>
+													<span class="gray">123132</span>
+												</p>
+											</a>
+											<div class="mui-collapse-content">
+												<ul id="OA_task_1" class="mui-table-view bill-list">
+													<h6 class="day-title">
+														<p>11月15日</p>
+														<p>花费<span>8034.00</span></p>
+													</h6>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-right mui-disabled">
+															<a class="mui-btn mui-btn-red">删除</a>
+														</div>
+														<div class="mui-slider-handle">
+															<p class="list-left">
+																<span class="mui-icon mui-icon-home cIcon"></span>
+																<span class="cName">吃饭</span>
+															</p>
+															<p class="list-right red">89:00</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- 图表 -->
+					<section class="table-wrap none">
+						<div class="mui-slider">
+						    <div class="mui-slider-group">
+								<!--第一个内容区容器-->
+								<div class="mui-slider-item">
+								  <div id="income" style="width: 350px;height:300px;"></div>
+								</div>
+								<!--第二个内容区-->
+								<div class="mui-slider-item">
+								  <div id="expend" style="width: 350px;height:300px;"></div>
+								</div>
+						    </div>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+			<!-- 底部导航 -->
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-phone"></span>
+					<span class="mui-tab-label">圈子</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-email"></span>
+					<span class="mui-tab-label">赚钱中</span>
+				</a>
+				<a class="mui-tab-item">
+					<span class="mui-icon mui-icon-gear"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+			</nav>
+			
+			<!-- 黑色遮罩 -->
+			<div class="mui-off-canvas-backdrop"></div>
+		</div>
+	</div>
+	<script src="js/libs/require.js" data-main="js/page/index"></script>
+</body>
+</html>

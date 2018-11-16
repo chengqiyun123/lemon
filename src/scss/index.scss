@@ -1,0 +1,203 @@
+@import "_minix.scss";
+@import "common.scss";
+*{
+	font-size: pxTorem(16px);
+	color: #000;
+}
+//侧栏
+.aside{
+	padding: pxTorem(10px);
+	@include sizing;
+	h2{
+		width:100%;
+		padding: 0 pxTorem(10px);
+		margin: pxTorem(10px) 0;
+		border-left: pxTorem(2px) solid #FAE363;
+		@include sizing;
+		font-size: pxTorem(22px);
+	}
+	ul li{
+		display: inline-block;
+		padding: pxTorem(3px) pxTorem(5px);
+		border: pxTorem(1px) solid #eee;
+		border-radius: pxTorem(10px);
+		font-size: pxTorem(16px);
+	}
+	.close-aside{
+		margin-top: pxTorem(20px);
+	}
+}
+
+//主界面
+.header{
+	width: 100%;
+	height: pxTorem(120px);
+	padding: pxTorem(5px) pxTorem(10px);
+	@include sizing;
+	background: #FAE363;
+	@include box_flex;
+	@include direction(column);
+	@include justify(space-around);
+	.header1{
+		width: 100%;
+		line-height: pxTorem(30px);
+		font-size: pxTorem(16px);
+		@include box_flex;
+		@include justify(space-between);
+		p{
+			color: #000;
+			span{
+				padding: pxTorem(3px) pxTorem(8px);
+				margin: 0 pxTorem(3px);
+				border: pxTorem(1px) solid #333;
+				border-radius: pxTorem(10px);
+			}
+		}
+	}
+	.header2{
+		width: 100%;
+		font-size: pxTorem(30px);
+	}
+	.header3{
+		width: 100%;
+		@include box_flex;
+		@include align;
+		p{
+			width: 50%;
+			font-size: pxTorem(16px);
+			color: #000;
+		}
+	}
+}
+.mui-off-canvas-left, .mui-off-canvas-right{
+	background: #fff;
+}
+.main .wrap{
+	padding-top: pxTorem(120px);
+	padding-bottom: pxTorem(44px);
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+	@include box_flex;
+	@include direction(column);
+	.con-title{
+		padding: 0 pxTorem(10px);
+		@include sizing;
+		width: 100%;
+		height: pxTorem(44px);
+		background: #fff;
+		@include box_flex;
+		@include justify(space-between);
+		@include align;
+		p{
+			height: pxTorem(30px);
+			border: pxTorem(1px) solid #999;
+			border-radius: pxTorem(20px);
+			overflow: hidden;
+			color: #999;
+			@include box_flex;
+			@include sizing;
+			span{
+				padding: 0 pxTorem(10px);
+				font-size: pxTorem(18px);
+				&.active{
+					background: #FAE363;
+				}
+			}
+		}
+		.mui-icon{
+			font-size: pxTorem(22px);
+		}
+	}
+	.content{ 
+		width: 100%;
+		@include flex;
+		position: relative;
+		font-size: pxTorem(18px);
+		section{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		//账单列表
+		.bill-list{
+			.day-title{
+				padding: 0 pxTorem(10px);
+				@include sizing;
+				width: 100%;
+				height: pxTorem(44px);
+				line-height: pxTorem(44px);
+				font-size: pxTorem(18px);
+				@include box_flex;
+				@include justify(space-between);
+				span{
+					color: #999;
+				}
+			}
+			 li{
+				width: 100%;
+				height: pxTorem(70px);
+				line-height: pxTorem(50px);
+				font-size: pxTorem(20px);
+				.mui-slider-handle{
+					@include box_flex;
+					@include justify(space-between);
+					.list-left{
+						.cIcon{
+							display: inline-block;
+							width: pxTorem(45px);
+							height: pxTorem(45px);
+							line-height: pxTorem(45px);
+							text-align: center;
+							border-radius: 50%;
+							font-size: pxTorem(30px);
+							background: #FAE363;
+						}
+						.cName{
+							padding-left: pxTorem(5px);
+							font-size: pxTorem(22px);
+							color: #000;
+						}
+					}
+					.list-right{
+						font-size: pxTorem(26px);
+					}
+				}
+			}
+		}
+		//按年折叠
+		.fold{
+			width: 100%;
+			height: pxTorem(70px);
+			@include box_flex;
+			@include justify(space-between);
+			
+			p{
+				@include box_flex;
+				@include direction(column);
+				@include align;
+				@include justify;
+			}
+			.flod-month{
+				@include direction;
+			}
+		}
+		
+	}
+}
+.none{
+	display: none;
+}
+.nav{
+	width: 100%;
+	height: pxTorem(44px);
+}
+.red{
+	color: #EE817E;
+}
+.green{
+	color: #4CD964;
+}
+.gray{
+	color: gray;
+}

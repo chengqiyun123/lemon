@@ -1,0 +1,25 @@
+require.config({
+	baseUrl:'/js/',
+	paths:{
+		//库文件
+		"mui":"./libs/mui.min",
+		"poppicker":"./libs/mui.poppicker",
+		"picker":"./libs/mui.picker",
+		"dtpicker":"./libs/mui.dtpicker",
+		"echarts":"https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts",
+		
+		"flexible":"./libs/flexible",
+		"dom":'./common/dom'
+	},
+	shim:{
+		'poppicker':{
+			deps:['mui']
+		},
+		'picker':{
+			deps:['mui']
+		},
+		'dtpicker':{
+			deps:['mui'],
+		}
+	} 
+})
